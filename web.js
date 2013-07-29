@@ -5,11 +5,11 @@ app.use(express.logger());
 //var buf = new Buffer (16);
 //buf = fs.readFileSync(index.html);
 //output_sam = buf.toString('utf-8');
-
+output_sam = 'helloworld';
 
 
 app.get('/', function(request, response) {
-  response.send('hello');//output_sam);
+  response.send(output_sam);
 });
 
 var port = process.env.PORT || 5000;
